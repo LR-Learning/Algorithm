@@ -1,6 +1,6 @@
-package chapter1.section3;
+package chapter1.section4;
 
-import static chapter1.section3.SortTestHelper.*;
+import chapter1.section4.SortTestHelper;
 
 /**
  * @Author: LR
@@ -35,9 +35,9 @@ public class SelectionSort {
 
     public static void main(String[] args) {
         // 测试自定义的算法辅助函数
-        int n = 20;
-        Integer[] arr = SortTestHelper.generateRandomArray(n, 0, 100);
+        int n = 10000;
+        Integer[] arr = SortTestHelper.generateRandomArray(n, 0, n);
         sort(arr);
-        SortTestHelper.printArray(arr);
+        SortTestHelper.testSort("chapter1.section4.SelectionSort", arr);
     }
 }

@@ -16,27 +16,11 @@ public class Student implements Comparable<Student> {
         this.score = score;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Integer getScore() {
-        return score;
-    }
-
-    public void setScore(Integer score) {
-        this.score = score;
-    }
-
     /**
      * 判断对象地大小
      *
      * @param that 被比较的对象
-     * @return ths < that 返回大于0的整数；等于返回0；小于返回负整数
+     * @return this < that 返回大于0的整数；等于返回0；小于返回负整数
      */
 
     public int compareTo(Student that) {
